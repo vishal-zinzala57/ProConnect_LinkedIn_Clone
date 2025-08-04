@@ -1,0 +1,224 @@
+.container {
+    padding: 1.3rem;
+    background: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.backDrop_Container {
+    width: 100%;
+    height: 30vh;
+    background: url("https://images.pexels.com/photos/545521/pexels-photo-545521.jpeg");
+    block-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+
+.backDrop_Container img {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -32%;
+    text-align: center;
+    left: 8%;
+}
+
+
+.backDrop__overLay {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -32%;
+    text-align: center;
+    left: 8%;
+    z-index: 4;
+    color: white;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backDrop__overLay:hover {
+    opacity: 0.7;
+    background-color: black;
+}
+
+
+.profileContainer_Details {
+    padding-top: 6.6rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.card__ProfileContainer>img {
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.connectBtn {
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+    background: blue;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.connectionButton {
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+    border: 1px solid black;
+    outline: none;
+    color: blue;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.workHistory_Container {
+    display: flex;
+    gap: 1.4rem;
+    padding-top: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.workHistoryCard {
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+.profileContainer_Details input {
+    outline: none;
+    border-style: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    background: #F5F5F5;
+    width: fit-content;
+}
+
+.profileContainer_Details textarea {
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    font-family: "poppins" !important;
+    font-style: 1.3rem;
+    background: #F5F5F5;
+}
+
+.nameEdit {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.updateProfileBtn {
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+    background: blue;
+    outline: none;
+    border: none;
+    width: fit-content;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.addWorkButton {
+    background-color: white;
+    border: 1px dotted silver;
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem 1.5rem;
+    height: 3rem;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.commentsContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allCommentsContainer {
+    width: 40vw;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.input_Fields {
+    padding: 0.7rem;
+    border: 1px solid silver;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.educationCard {
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+.profileContainer_Details_flex {
+    display: flex;
+    gap: 0.7rem;
+}
+
+
+@media only screen and (max-width : 700px) {
+    .profileContainer_Details_flex{
+        flex-direction: column;
+    }
+    .workHistory{
+        display: flex;
+        flex-direction: column;
+    }
+    .Education{
+        display: flex;
+        flex-direction: column;
+    }
+    .nameEdit{
+        width: 50% !important;
+    }
+}
